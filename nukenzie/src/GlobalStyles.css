@@ -1,0 +1,11 @@
+:root {
+    --colorprimary: #FD377E;
+    --grey1: #F8F9FA;
+  
+}
+
+*{
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}

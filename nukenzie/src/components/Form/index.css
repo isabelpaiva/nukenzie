@@ -1,0 +1,66 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.7rem;
+}
+
+
+
+
+select{
+    margin-top: 15px;
+    border: none;
+    margin-left: 15px;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+
+
+input{
+    border: 2px solid rgba(128, 128, 128, 0.103);
+    background-color: var(--grey1);
+    padding: 8px;
+    border-radius: 4px;
+    width: 14rem;
+}
+
+.btn-submit{
+    width: 15rem;
+    margin-top: 15px;
+    border: none;
+    background-color: var(--colorprimary);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.container-value{
+    display: flex;
+
+}
+
+.input-value{
+    width: 8.1rem;
+    
+}
+
+
+@media(min-width: 700px){
+    label{
+        font-size: 1.3rem;
+    }
+
+    input{
+        width: 15rem;
+        height: 3rem;
+        font-size: 1.1rem;
+    }
+
+    select{
+        margin-top: 0px;
+        height: 4rem;
+    }
+}
