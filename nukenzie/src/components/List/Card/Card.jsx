@@ -3,7 +3,7 @@ import "./index.css";
 
 import { FaTrash } from "react-icons/fa";
 
-export const Card = ({ todo, removeTodoFromTodoList }) => {
+export const Card = ({ todo, removeCardfromCardList }) => {
   if (todo.category == "Entrada") {
     return (
       <li className="card border-entrada">
@@ -15,7 +15,7 @@ export const Card = ({ todo, removeTodoFromTodoList }) => {
           <p className="valor"> R$: {todo.content}</p>
           <button
             className="button-remove"
-            onClick={() => removeTodoFromTodoList(todo.id)}
+            onClick={() => removeCardfromCardList(todo.id)}
           >
             <FaTrash />
           </button>
@@ -34,7 +34,7 @@ export const Card = ({ todo, removeTodoFromTodoList }) => {
             <p className="valor"> R$: {todo.content}</p>
             <button
               className="button-remove"
-              onClick={() => removeTodoFromTodoList(todo.id)}
+              onClick={() => removeCardfromCardList(todo.id)}
             >
               <FaTrash />
             </button>

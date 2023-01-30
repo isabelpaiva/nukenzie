@@ -9,19 +9,19 @@ function App() {
   const [filter, setFilter] = useState("");
   const [pagePrincipal, setPagePrincipal] = useState(true);
 
-  const filterList = todoList.filter((todo) => {
-    return filter === "" ? true : todo.category === filter;
+  const filterList = todoList.filter((card) => {
+    return filter === "" ? true : card.category === filter;
   });
   console.log(filterList);
 
-  const addCardtoCardList = (todo) => {
-    const newTodo = { ...todo, id: uuidv4() };
+  const addCardtoCardList = (card) => {
+    const newTodo = { ...card, id: uuidv4() };
     setCardList([...todoList, newTodo]);
   };
 
-  const removeTodoFromTodoList = (todoId) => {
+  const removeCardfromCardList = (cardID) => {
     if (confirm) {
-      const newTodoList = todoList.filter((todo) => todo.id !== todoId);
+      const newTodoList = todoList.filter((todo) => todo.id !== cardID);
       setCardList(newTodoList);
     }
   };
@@ -36,14 +36,10 @@ function App() {
           <NuKenziePage
             filterList={filterList}
             addCardtoCardList={addCardtoCardList}
-            removeTodoFromTodoList={removeTodoFromTodoList}
+            removeCardfromCardList={removeCardfromCardList}
             todoList={todoList}
             setFilter={setFilter}
           />
-
-          <div></div>
-
-          <></>
         </div>
       )}
     </>

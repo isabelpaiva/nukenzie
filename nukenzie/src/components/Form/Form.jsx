@@ -4,7 +4,7 @@ import "../../GlobalStyles.css";
 import Sum from "../TotalValue";
 
 export const Form = ({ addCardtoCardList }) => {
-  /* reflexo exato do estado */
+
   const [formData, setFormData] = useState({
     title: "",
     content: "",

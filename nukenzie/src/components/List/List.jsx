@@ -3,7 +3,7 @@ import Card from "./Card";
 import "./index.css";
 import rectangleempty from "../../assets/rectangleempty.png";
 
-export const CardList = ({ filterList, removeTodoFromTodoList }) => {
+export const CardList = ({ filterList, removeCardfromCardList }) => {
   return (
     <ul>
       {filterList.length > 0 ? (
@@ -12,7 +12,7 @@ export const CardList = ({ filterList, removeTodoFromTodoList }) => {
             <Card
               key={index}
               todo={todo}
-              removeTodoFromTodoList={removeTodoFromTodoList}
+              removeCardfromCardList={removeCardfromCardList}
             />
           ))}
         </>

@@ -7,7 +7,7 @@ import "./index.css";
 export const NuKenziePage = ({
   filterList,
   addCardtoCardList,
-  removeTodoFromTodoList,
+  removeCardfromCardList,
   setFilter,
   todoList,
 }) => {
@@ -34,7 +34,7 @@ export const NuKenziePage = ({
 
           <CardList
             filterList={filterList}
-            removeTodoFromTodoList={removeTodoFromTodoList}
+            removeCardfromCardList={removeCardfromCardList}
           />
         </ul>
       </div>
