@@ -7,10 +7,9 @@
   background-color: #212529;
 }
 
-.container-second{
+.container-second {
   padding: 34px;
 }
-
 
 .container-home > img {
   height: 35rem;
@@ -23,7 +22,7 @@
   color: white;
 }
 
-.button-iniciar {
+.button-start {
   background-color: #fd377e;
   cursor: pointer;
   color: #fff;
@@ -33,7 +32,7 @@
   border: none;
 }
 
-.button-iniciar:hover {
+.button-start:hover {
   background-color: #98053e;
 }
 
@@ -51,29 +50,24 @@
   .container-home > div > h1 {
     font-size: 2rem;
   }
-  
+
   .container-home > img {
     height: 20rem;
     width: 20rem;
   }
 }
 
-p{
+p {
   color: white;
-  font-weight: bold;;
+  font-weight: bold;
 }
 
 @media (min-width: 630px) {
-
-  .button-iniciar {
-  
+  button-start {
     width: 50%;
   }
 
-  h1{
+  h1 {
     width: 30rem;
   }
-  
-  
-  
 }

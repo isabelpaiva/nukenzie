@@ -13,7 +13,7 @@ export const NuKenziePage = ({
 }) => {
   return (
     <div class="container-form">
-      <div>
+      <div className="div-description">
         <Form addCardtoCardList={addCardtoCardList} />
         <Sum todoList={todoList}></Sum>
       </div>
@@ -32,11 +32,11 @@ export const NuKenziePage = ({
             </button>
           </div>
 
+          </ul>
           <CardList
             filterList={filterList}
             removeCardfromCardList={removeCardfromCardList}
           />
-        </ul>
       </div>
     </div>
   );

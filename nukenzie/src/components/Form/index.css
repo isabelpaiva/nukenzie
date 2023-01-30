@@ -27,6 +27,7 @@ input{
 }
 
 .btn-submit{
+    height: 3rem;
     width: 15rem;
     margin-top: 15px;
     border: none;
@@ -48,13 +49,13 @@ input{
 }
 
 
-@media(min-width: 700px){
+@media(min-width: 730px){
     label{
         font-size: 1.3rem;
     }
 
     input{
-        width: 15rem;
+        width: 18rem;
         height: 3rem;
         font-size: 1.1rem;
     }
@@ -63,4 +64,15 @@ input{
         margin-top: 0px;
         height: 4rem;
     }
+    .input-value{
+        width: 12rem;
+        
+    }
+
+    .btn-submit{
+        height: 3rem;
+        width: 20rem;
+    }
+
+    
 }

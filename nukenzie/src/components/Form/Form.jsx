@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
 import "../../GlobalStyles.css";
-import Sum from "../TotalValue";
 
 export const Form = ({ addCardtoCardList }) => {
 
@@ -41,7 +40,7 @@ export const Form = ({ addCardtoCardList }) => {
       <label>Valor</label>
       <div className="container-value">
         <input
-          placeholder="1                          R$"
+          placeholder="1                 R$"
           className="input-value"
           type="text"
           value={formData.content}

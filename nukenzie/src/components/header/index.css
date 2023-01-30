@@ -1,20 +1,33 @@
-.container-header{
+.container-header {
   margin: 2px;
   height: 69px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  border-bottom: solid #9b989850 2px;
-
+ box-shadow: 1px 70px 15rem 5px  rgba(0, 0, 0, 0.185);
 }
 
-body{
+
+
+body {
   background-color: rgb(255, 255, 255);
 }
 
-.btnInicio{
+.btnStart {
   border: none;
   background-color: #80808021;
   padding: 15px;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.btnStart:hover{
+  background-color: var(--colorprimary);
+  transition: 0.75s;
+  color: white
+}
+
+
+@media(min-width: 730px){
+  
 }

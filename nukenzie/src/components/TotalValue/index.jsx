@@ -2,10 +2,10 @@ import "./index.css";
 
 const Sum = ({ todoList }) => {
   const total = todoList.reduce(
-    (totalMoney, todo) =>
-      todo.category === "Saída"
-        ? totalMoney - Number(todo.content)
-        : totalMoney + Number(todo.content),
+    (totalMoney, card) =>
+      card.category === "Saída"
+        ? totalMoney - Number(card.content)
+        : totalMoney + Number(card.content),
     0
   );
 
@@ -13,7 +13,7 @@ const Sum = ({ todoList }) => {
     <div className="container-sum">
       <div className="container-value-total">
         <h3>Valor total:</h3>
-        <div className="container-saldo">
+        <div className="container-balance">
           <p>R$</p>
           <p>{total}</p>
         </div>

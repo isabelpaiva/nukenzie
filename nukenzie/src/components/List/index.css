@@ -1,15 +1,26 @@
-.p-warning{
-    color:black;
-    margin-top: 1rem;  
-    font-size: 1.5rem;
+.p-warning {
+  color: black;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  width: 20rem;
 }
 
-.imagem-vazia{
-    width: 20rem;
+.empty-image {
+  width: 20rem;
 }
 
-.resumoFinanceiro{
-    color: black;
-    margin-top: 1.5rem;
+
+
+.financial-summary, .financial {
+  color: black;
+  margin-top: 1.5rem;
+}
+
+@media(min-width: 400px){
+  .empty-image {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
 }
 

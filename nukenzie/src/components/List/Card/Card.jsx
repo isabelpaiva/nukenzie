@@ -8,7 +8,7 @@ export const Card = ({ todo, removeCardfromCardList }) => {
     return (
       <li className="card border-entrada">
         <div className="card-left">
-          <h3>{todo.title}</h3>
+          <h3 className="h3-title">{todo.title}</h3>
           <span> {todo.category}</span>
         </div>
         <div className="card-rigth">
@@ -24,21 +24,25 @@ export const Card = ({ todo, removeCardfromCardList }) => {
     );
   } else if (todo.category == "Saída") {
     return (
+
+      
       <div>
         <li className="card border-saida">
           <div className="card-left">
-            <h3>{todo.title}</h3>
+            <h3 className="h3-title">{todo.title}</h3>
             <span> {todo.category}</span>
-          </div>
-          <div className="card-rigth">
+            </div>
+
+
+          <li className="card-rigth">
             <p className="valor"> R$: {todo.content}</p>
             <button
               className="button-remove"
               onClick={() => removeCardfromCardList(todo.id)}
-            >
+              >
               <FaTrash />
             </button>
-          </div>
+          </li>
         </li>
       </div>
     );
