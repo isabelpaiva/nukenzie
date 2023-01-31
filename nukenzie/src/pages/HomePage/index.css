@@ -8,12 +8,11 @@
 }
 
 .container-second {
-  padding: 34px;
+  padding: 1rem;
 }
 
 .container-home > img {
-  height: 35rem;
-  width: 35rem;
+ 
 }
 
 .container-home > div > h1 {
@@ -49,11 +48,16 @@
 
   .container-home > div > h1 {
     font-size: 2rem;
+    width: 18rem;
   }
 
   .container-home > img {
     height: 20rem;
-    width: 20rem;
+    width: 19rem;
+  }
+
+  .container-second{
+    margin: 1rem;
   }
 }
 
@@ -66,12 +70,15 @@ p {
   font-weight: bold;
 }
 
-@media (min-width: 630px) {
-  .button-start {
-    width: 50%;
+@media(min-width: 600px){
+  .container-home > img {
+    height: 35rem;
+    width: 35rem;
   }
 
-  h1 {
+  .container-second{
     width: 30rem;
   }
+  
 }
+
