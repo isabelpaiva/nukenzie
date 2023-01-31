@@ -20,7 +20,7 @@
 
 .financial-summary, .financial {
   color: black;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
 }
 
 @media(min-width: 400px){

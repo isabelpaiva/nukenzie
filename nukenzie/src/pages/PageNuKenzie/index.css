@@ -79,7 +79,6 @@ ul {
 @media (min-width: 730px) {
   .container-form {
     gap: 0rem;
-    padding: 15px;
     display: flex;
     flex-direction: row;
   }
@@ -102,6 +101,6 @@ ul {
 
 @media (min-width: 800px) {
   .div-description {
-    padding: 4rem;
+    padding-right: 4rem;
   }
 }
