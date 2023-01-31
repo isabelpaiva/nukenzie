@@ -72,7 +72,7 @@ p {
 
 @media(min-width: 600px){
   .container-home > img {
-    height: 35rem;
+    height: 22rem;
     width: 35rem;
   }
 
