@@ -17,6 +17,13 @@ button {
 .button-remove {
   width: 38px;
   padding: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-remove:hover{
+  background-color: rgba(128, 128, 128, 0.274);
+  transition: 1s;
 }
 
 .div-saida {

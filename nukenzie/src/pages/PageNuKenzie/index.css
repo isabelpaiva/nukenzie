@@ -5,13 +5,12 @@
     align-items: center;
     justify-content: center;
 }
-
-/* .App{
-    max-width: 1200px;
+.App{
+    display: flex;
+    max-width:fit-content ;
+    flex-direction: column;
     margin: 0 auto;
-} */
-
-
+}
 
 .container-form{
     width: fit-content;
@@ -53,7 +52,8 @@ form{
 
 .container-right{
     gap: 1rem;
-    justify-content: center
+    justify-content: center;
+    
   
 }
 
@@ -61,6 +61,13 @@ form{
     padding: 0.75rem;
     font-weight: bold;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-filter:hover{
+    background-color: var(--colorprimary);
+    transition: 1s;
+    color: white;
 }
 
 ul{
@@ -97,10 +104,20 @@ ul{
     }
 
     .div-description{
-        /* box-shadow: 2px 4px 13px 14px #8080801c; */
         padding: 1rem;
        
     }
+
+  
+
+    .App{
+        display: flex;
+        width: none;
+        flex-direction: column;
+        max-width:none;
+
+    }
+    
 
     
 
@@ -110,7 +127,7 @@ ul{
 @media(min-width: 800px){
 
     .div-description{
-        /* box-shadow: 2px 4px 13px 14px #8080801c; */
+
         padding: 4rem;
        
     }

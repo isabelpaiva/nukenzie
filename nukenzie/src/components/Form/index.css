@@ -24,11 +24,11 @@ input{
     padding: 8px;
     border-radius: 4px;
     width: 14rem;
+    cursor: pointer;
 }
 
 .btn-submit{
     height: 3rem;
-    width: 15rem;
     margin-top: 15px;
     border: none;
     background-color: var(--colorprimary);
@@ -36,6 +36,7 @@ input{
     padding: 12px;
     border-radius: 8px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .container-value{
