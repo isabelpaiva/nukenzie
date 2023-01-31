@@ -5,22 +5,22 @@ import Header from "./components/header";
 import HomePage from "./pages/HomePage";
 
 function App() {
-  const [todoList, setCardList] = useState([]);
+  const [cardList, setCardList] = useState([]);
   const [filter, setFilter] = useState("");
   const [mainPage, setmainPage] = useState(true);
 
-  const filterList = todoList.filter((card) => {
+  const filterList = cardList.filter((card) => {
     return filter === "" ? true : card.category === filter;
   });
 
   const addCardtoCardList = (card) => {
     const newCard = { ...card, id: uuidv4() };
-    setCardList([...todoList, newCard]);
+    setCardList([...cardList, newCard]);
   };
 
   const removeCardfromCardList = (cardID) => {
     if (confirm) {
-      const newCardList = todoList.filter((todo) => todo.id !== cardID);
+      const newCardList = cardList.filter((card) => card.id !== cardID);
       setCardList(newCardList);
     }
   };
@@ -36,7 +36,7 @@ function App() {
             filterList={filterList}
             addCardtoCardList={addCardtoCardList}
             removeCardfromCardList={removeCardfromCardList}
-            todoList={todoList}
+            cardList={cardList}
             setFilter={setFilter}
           />
         </div>

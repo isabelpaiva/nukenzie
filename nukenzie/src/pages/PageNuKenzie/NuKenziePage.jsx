@@ -9,13 +9,13 @@ export const NuKenziePage = ({
   addCardtoCardList,
   removeCardfromCardList,
   setFilter,
-  todoList,
+  cardList,
 }) => {
   return (
     <div class="container-form">
       <div className="div-description">
         <Form addCardtoCardList={addCardtoCardList} />
-        <Sum todoList={todoList}></Sum>
+        <Sum cardList={cardList}></Sum>
       </div>
 
       <div className="div-cards">
@@ -31,12 +31,11 @@ export const NuKenziePage = ({
               Saídas
             </button>
           </div>
-
-          </ul>
-          <CardList
-            filterList={filterList}
-            removeCardfromCardList={removeCardfromCardList}
-          />
+        </ul>
+        <CardList
+          filterList={filterList}
+          removeCardfromCardList={removeCardfromCardList}
+        />
       </div>
     </div>
   );

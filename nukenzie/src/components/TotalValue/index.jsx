@@ -1,7 +1,7 @@
 import "./index.css";
 
-const Sum = ({ todoList }) => {
-  const total = todoList.reduce(
+const Sum = ({ cardList }) => {
+  const total = cardList.reduce(
     (totalMoney, card) =>
       card.category === "Saída"
         ? totalMoney - Number(card.content)

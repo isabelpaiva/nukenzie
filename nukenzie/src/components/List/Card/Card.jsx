@@ -3,39 +3,39 @@ import "./index.css";
 
 import { FaTrash } from "react-icons/fa";
 
-export const Card = ({ todo, removeCardfromCardList }) => {
-  if (todo.category == "Entrada") {
+export const Card = ({ card, removeCardfromCardList }) => {
+  if (card.category == "Entrada") {
     return (
       <li className="card border-entrada">
         <div className="card-left">
-          <h3 className="h3-title">{todo.title}</h3>
-          <span> {todo.category}</span>
+          <h3 className="h3-title">{card.title}</h3>
+          <span> {card.category}</span>
         </div>
         <div className="card-rigth">
-          <p className="valor"> R$: {todo.content}</p>
+          <p className="valor"> R$: {card.content}</p>
           <button
             className="button-remove"
-            onClick={() => removeCardfromCardList(todo.id)}
+            onClick={() => removeCardfromCardList(card.id)}
           >
             <FaTrash />
           </button>
         </div>
       </li>
     );
-  } else if (todo.category == "Saída") {
+  } else if (card.category == "Saída") {
     return (
       <div>
         <li className="card border-saida">
           <div className="card-left">
-            <h3 className="h3-title">{todo.title}</h3>
-            <span> {todo.category}</span>
+            <h3 className="h3-title">{card.title}</h3>
+            <span> {card.category}</span>
           </div>
 
           <li className="card-rigth">
-            <p className="valor"> R$: {todo.content}</p>
+            <p className="valor"> R$: {card.content}</p>
             <button
               className="button-remove"
-              onClick={() => removeCardfromCardList(todo.id)}
+              onClick={() => removeCardfromCardList(card.id)}
             >
               <FaTrash />
             </button>
