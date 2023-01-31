@@ -6,7 +6,7 @@ import { NuKenziePage } from "../../pages/PageNuKenzie/NuKenziePage";
 
 export const CardList = ({ filterList, removeCardfromCardList }) => {
   return (
-    <ul>
+    <ul className="ul-container">
    
         
 
@@ -31,14 +31,14 @@ export const CardList = ({ filterList, removeCardfromCardList }) => {
 
           </div>
           <div>
-            
-          </div>
           <p className="p-warning" aria-label="alert">
             Você ainda não possui nenhum lançamento
           </p>
           <img className="empty-image" src={rectangleempty}></img>
           <img className="empty-image" src={rectangleempty}></img>
           <img className="empty-image" src={rectangleempty}></img>
+            
+          </div>
         </div>
       )}
     </ul>

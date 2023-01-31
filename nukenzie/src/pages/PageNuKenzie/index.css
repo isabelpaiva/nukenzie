@@ -1,134 +1,107 @@
-.ul-filter{
-    display: flex;
-    margin-top: 20px;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
+.ul-filter {
+  display: flex;
+  margin-top: 20px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
-.App{
+.App {
+  display: flex;
+  /* max-width:fit-content ; */
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container-form {
+  width: fit-content;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+form {
+  border: 2px solid rgba(77, 67, 67, 0.089);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.div-cards {
+  height: 423px;
+}
+
+.div-filter {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container-right {
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-filter {
+  padding: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-filter:hover {
+  background-color: var(--colorprimary);
+  transition: 1s;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.div-description {
+  /* box-shadow: 2px 4px 13px 14px #8080801c; */
+  padding: 1px;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+@media (min-width: 730px) {
+  .container-form {
+    gap: 0rem;
+    padding: 15px;
     display: flex;
-    max-width:fit-content ;
+    flex-direction: row;
+  }
+
+  .div-valor {
+    display: flex;
+  }
+
+  .div-description {
+    padding: 1rem;
+  }
+
+  .App {
+    display: flex;
+    width: none;
     flex-direction: column;
-    margin: 0 auto;
+    max-width: none;
+  }
 }
 
-.container-form{
-    width: fit-content;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 32px;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-
-}
-
-form{
-    border: 2px solid rgba(77, 67, 67, 0.089);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-
-.div-cards{
-    height: 423px;
-}
-
-.div-filter{
-    gap: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-
-
-
-.container-right{
-    gap: 1rem;
-    justify-content: center;
-    
-  
-}
-
-.btn-filter{
-    padding: 0.75rem;
-    font-weight: bold;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.btn-filter:hover{
-    background-color: var(--colorprimary);
-    transition: 1s;
-    color: white;
-}
-
-ul{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-
-
-.div-description{
-    /* box-shadow: 2px 4px 13px 14px #8080801c; */
-    padding: 1px;
-    margin-top: 2rem;
-    border-radius: 1rem;
-   
-}
-
-
-
-@media(min-width: 730px){
-    .container-form{
-     
-        gap: 0rem;
-       padding: 15px;
-        display: flex;
-        flex-direction: row;
-
-    }
-
- 
-    .div-valor{
-        display: flex;
-    }
-
-    .div-description{
-        padding: 1rem;
-       
-    }
-
-  
-
-    .App{
-        display: flex;
-        width: none;
-        flex-direction: column;
-        max-width:none;
-
-    }
-    
-
-    
-
-}
-
-
-@media(min-width: 800px){
-
-    .div-description{
-
-        padding: 4rem;
-       
-    }
+@media (min-width: 800px) {
+  .div-description {
+    padding: 4rem;
+  }
 }

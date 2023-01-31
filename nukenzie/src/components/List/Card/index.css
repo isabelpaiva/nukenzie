@@ -56,12 +56,12 @@ button {
 }
 
 .border-entrada {
-  border-left: 5px solid rgb(4, 160, 17);
+  border-left: 5px solid #03B898;
   max-width: fit-content;
 }
 
 .border-saida {
-  border-left: 5px solid rgb(181, 31, 8);
+  border-left: 5px solid #E9ECEF;
   max-width: fit-content;
 }
 
