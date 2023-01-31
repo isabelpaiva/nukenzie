@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Form from "../../components/Form";
-import CardList from "../../components/List";
+import Form from "../../components/Form/Form";
+import CardList from "../../components/List/List";
 import Sum from "../../components/TotalValue";
 import "./index.css";
 
@@ -40,3 +40,6 @@ export const NuKenziePage = ({
     </div>
   );
 };
+
+
+export default NuKenziePage;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
-import "../../GlobalStyles.css";
+import "../../GlobalStyles.css"
 
 export const Form = ({ addCardtoCardList }) => {
 
@@ -16,7 +16,7 @@ export const Form = ({ addCardtoCardList }) => {
     if (formData.title !== "" && formData.content !== "") {
       addCardtoCardList(formData);
     } else {
-      alert("Você precisa preencher os campos para enviar o formulário.");
+      alert("Você precisa preencher os campos para enviar o formulário.")
     }
 
     setFormData({
@@ -65,3 +65,5 @@ export const Form = ({ addCardtoCardList }) => {
     </form>
   );
 };
+
+export default Form

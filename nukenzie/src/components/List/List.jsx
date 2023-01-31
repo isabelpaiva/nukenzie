@@ -23,7 +23,7 @@ export const CardList = ({ filterList, removeCardfromCardList }) => {
           <div>
             <p className="financial-summary">Resumo Financeiro</p>
           </div>
-          <div>
+          <div className="div-container">
             <p className="p-warning" aria-label="alert">
               Você ainda não possui nenhum lançamento
             </p>
@@ -36,3 +36,6 @@ export const CardList = ({ filterList, removeCardfromCardList }) => {
     </ul>
   );
 };
+
+
+export default CardList

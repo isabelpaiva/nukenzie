@@ -1,12 +1,13 @@
 .p-warning {
   color: black;
   margin-top: 1rem;
-  font-size: 1.5rem;
-  width: 20rem;
+  font-size: 22px;
+  width: 100%;
+  margin-bottom:  32px;
 }
 
 .empty-image {
-  width: 20rem;
+  width: 282px;
 }
 
 .empty-image {
@@ -15,12 +16,22 @@
   margin-top: 1rem;
 }
 
+.ul-container{
+  width: 100%
+}
 
+.div-container{
+  width: 80%;
+
+}
 
 
 .financial-summary, .financial {
   color: black;
-  /* margin-top: 1.5rem; */
+  margin-top: 1.5rem;
+  font-size: 16px;
+  width: 80%;
+  margin-top: 20px;
 }
 
 @media(min-width: 400px){
