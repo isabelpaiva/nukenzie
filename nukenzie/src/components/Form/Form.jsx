@@ -40,9 +40,9 @@ export const Form = ({ addCardtoCardList }) => {
       <label>Valor</label>
       <div className="container-value">
         <input
-          placeholder="1                 R$"
+          placeholder="1                             R$"
           className="input-value"
-          type="text"
+          type="number"
           value={formData.content}
           onChange={(event) =>
             setFormData({ ...formData, content: event.target.value })
