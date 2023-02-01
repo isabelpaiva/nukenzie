@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NuKenziePage from "./pages/PageNuKenzie/NuKenziePage";
 import { v4 as uuidv4 } from "uuid";
-import Header from "./components/header";
+import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 
 function App() {

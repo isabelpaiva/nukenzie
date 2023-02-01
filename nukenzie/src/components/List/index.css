@@ -16,6 +16,14 @@
   margin-top: 1rem;
 }
 
+.div{
+  max-width: 308px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: inherit;
+}
+
 .ul-container{
   width: 100%
 }

@@ -19,8 +19,8 @@ export const CardList = ({ filterList, removeCardfromCardList }) => {
           ))}
         </>
       ) : (
+          <div className="div">
         <div>
-          <div>
             <p className="financial-summary">Resumo Financeiro</p>
           </div>
           <div className="div-container">

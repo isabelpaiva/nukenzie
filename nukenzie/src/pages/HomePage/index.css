@@ -30,10 +30,11 @@
   border-radius: 5px;
   border: none;
   margin-top: 2rem;
+  font-weight: bold;
 }
 
 .button-start:hover {
-  background-color: #98053e;
+  background-color: #ff0095;
   transition: 1s;
 }
 
